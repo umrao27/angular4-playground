@@ -15,6 +15,7 @@ import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { SortPipe } from './app.sort';
+import { SpaDemoComponent } from './spa-demo/spa-demo.component';
 
 
 
@@ -29,6 +30,8 @@ import { SortPipe } from './app.sort';
     ChildComponent,
 
     PipesComponent,
+
+    SpaDemoComponent,
   ],
   imports: [
     BrowserModule,

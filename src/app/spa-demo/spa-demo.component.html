@@ -1,0 +1,15 @@
+<div class="main">
+  <h3>Add/Remove Items</h3>
+  <div class="addItem">
+    <input [(ngModel)]="newItem" type="taxt" class="form-control" placeholder="Add Items" class="addText">
+    <button (click)="pushItem()" class="btn btn-primary">Add</button>
+  </div>
+  <br/>
+
+  <ul>
+    <li *ngFor="let item of items; let indx = index" class="alert alert-info">
+      {{item}}
+      <span (click)="removeItem(indx)">x</span>
+    </li>
+  </ul>
+</div>

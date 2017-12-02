@@ -1,10 +1,13 @@
+body{
+    font-family: sans-serif;
+}
+
 .main{
     width: 500px;
     text-align: center;
     margin: 0 auto;
     border: 1px solid #ccf6fd;
     border-bottom: 0px;
-    font-family: arial;
     border-radius: 3px;
 }
 
@@ -40,8 +43,6 @@ ul{
     margin-bottom: 0px;
 }
 li {
-    /* border-bottom: 1px solid #bfbfbf;
-    background-color: #d7d7d7; */
     padding: 10px 0px;
     margin-bottom: 5px;
 }

@@ -1,0 +1,11 @@
+<h3>{{title}}</h3>
+
+<hr/>
+
+<h6>Get parent data and show in child component - </h6>
+<app-child
+[sendToChild] = "parentData"
+(sendToParent) = "getChildRecord($event)">
+</app-child>
+
+<span>Child data - {{childData}}</span>

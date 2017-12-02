@@ -1,0 +1,32 @@
+<h1>Form Play</h1>
+
+<h3>Template driven Form example</h3>
+
+<form  #userForm ="ngForm"  (ngSubmit) ="getFormData(userForm.value)">
+          <input type="text" name="firstname" placeholder="firstname" ngModel>
+          <br/><br/>
+          <input type="text" name="lastname" placeholder="lastname" ngModel>
+            <br/><br/>
+            <select name="languages" ngModel>
+              <option *ngFor="let lang of language" value="{{lang}}">{{lang}}</option>
+            </select>
+            <br/><br/>
+            <input type="submit" value="Submit">    
+  </form>
+
+
+  <h3>Module driven Form example</h3>
+
+  <form  [formGroup] ="form"  (ngSubmit) ="getFormData(form.value)" >
+          <input type="text" name="firstname" placeholder="firstname" formControlName="firstname">
+          <br/><br/>
+          <input type="text" name="lastname" placeholder="lastname" formControlName="lastname">
+            <br/><br/>
+            <select name="languages" formControlName="languages">
+              <option *ngFor="let lang of language" value="{{lang}}">{{lang}}</option>
+            </select>
+            <br/><br/>
+            <input type="submit" value="Submit">    
+  </form>
+<hr />
+

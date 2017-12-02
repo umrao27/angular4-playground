@@ -1,7 +1,7 @@
 {
   "name": "angular-playground",
   "version": "0.0.0",
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
